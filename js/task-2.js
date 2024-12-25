@@ -13,7 +13,12 @@ class Storage {
     }
     
     removeItem(itemToRemove) {
-        this.#item.splice(itemToRemove);
+
+        return this.#item.splice(indexOf(this.#item === itemToRemove) ? );
+        // includes(itemToRemove);
+        // this.#item.indexOf(itemToRemove);
+        // console.log(removeItem());
+        
     }
 }
 
