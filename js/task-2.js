@@ -13,12 +13,12 @@ class Storage {
     }
     
     removeItem(itemToRemove) {
-
-        return this.#item.splice(indexOf(this.#item === itemToRemove) ? );
-        // includes(itemToRemove);
-        // this.#item.indexOf(itemToRemove);
-        // console.log(removeItem());
+        const index = this.#item.indexOf(itemToRemove);
+        console.log(index);
         
+        // this.#item = this.#item.splice(0, this.#item.itemToRemove, 1);
+        // this.#item = this.#item.splice(0, index, 1);
+        this.#item = this.#item.splice(0, index === 1, 1)
     }
 }
 
